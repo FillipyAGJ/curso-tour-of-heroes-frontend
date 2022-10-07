@@ -1,6 +1,10 @@
 <h2>My Heroes</h2>
 
 <ul class="heroes">
+  <!--
+    [class.selected]="hero === selectedHero" -> significa que quando o ambos forem exatamente iguais
+    ele vai aplicar uma propriedade scss no li.
+   -->
   <li
     *ngFor="let hero of heroes"
     [class.selected]="hero === selectedHero"
@@ -11,18 +15,4 @@
   </li>
 </ul>
 
-<div *ngIf="selectedHero">
-  <h2>{{ selectedHero.name | uppercase }} Details</h2>
-  <div><span>id: </span> {{ selectedHero.id }}</div>
-  <div><span>name: </span> {{ selectedHero.name }}</div>
-
-  <div>
-    <label for="name"> Hero name:</label>
-    <input
-      type="text"
-      id="name"
-      placeholder="name"
-      [(ngModel)]="selectedHero.name"
-    />
-  </div>
-</div>
+<app-hero-details [hero]="selectedHero"></app-hero-details>
