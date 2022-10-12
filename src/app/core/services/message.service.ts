@@ -4,6 +4,9 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class MessageService {
+
+  constructor() { }
+
   private messages: string[] = [];
 
   add(message: string): void {

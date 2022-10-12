@@ -24,4 +24,20 @@ export const HEROES: Hero[] = [
     id: 6,
     name: 'Capitão América'
   },
+  {
+    id: 7,
+    name: 'Star Lord'
+  },
+  {
+    id: 8,
+    name: 'Homem de Ferro'
+  },
+  {
+    id: 9,
+    name: 'Rocket Raccoon'
+  },
+  {
+    id: 10,
+    name: 'Drax'
+  }
 ]

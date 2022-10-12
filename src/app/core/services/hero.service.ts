@@ -1,6 +1,6 @@
 import { MessageService } from './message.service';
-import { HEROES } from './../mock/mock-heroes';
-import { Hero } from './../models/hero.model';
+import { HEROES } from '../mock/mock-heroes';
+import { Hero } from '../models/hero.model';
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
 
@@ -16,5 +16,11 @@ export class HeroService {
     const Heroes = of(HEROES);
     this.messageService.add('HeroService: fetched heroes');
     return Heroes
+  }
+
+  getHero(id: number): Observable<Hero> {
+    const hero = HEROES.find(hero => hero.id === id)!;
+    this.messageService.add(`HeroService: fetched hero id=${id}`)
+    return of(hero);
   }
 }
