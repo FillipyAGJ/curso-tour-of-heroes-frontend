@@ -1,4 +1,3 @@
-import { RouterModule } from '@angular/router';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MaterialModule } from './../material/material.module';
 import { DashboardComponent } from './components/dashboard.component';
@@ -12,7 +11,7 @@ import { DashboardRoutingModule } from './dashboard-routing.module';
     CommonModule,
     MaterialModule,
     FlexLayoutModule,
-    RouterModule
+    DashboardRoutingModule
   ]
 })
 export class DashboardModule { }

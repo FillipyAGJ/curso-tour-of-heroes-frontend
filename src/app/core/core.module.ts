@@ -5,16 +5,16 @@ import { MessagesComponent } from './components/messages/messages.component';
 import { MaterialModule } from '../material/material.module';
 import { NgModule, Optional, SkipSelf } from '@angular/core';
 import { ToolbarComponent } from './components/toolbar/toolbar.component';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 
-const COMPONENTES = [ MessagesComponent, ToolbarComponent ]
-const MODULES = [ FlexLayoutModule, MaterialModule ]
+const COMPONENTES = [ MessagesComponent, ToolbarComponent, PageNotFoundComponent ]
+const MODULES = [ FlexLayoutModule, MaterialModule, RouterModule ]
 
 @NgModule({
-  declarations: [ COMPONENTES ],
+  declarations: [ COMPONENTES,  ],
   imports: [
     CommonModule,
     MODULES,
-    RouterModule
   ],
   exports: [
     COMPONENTES,

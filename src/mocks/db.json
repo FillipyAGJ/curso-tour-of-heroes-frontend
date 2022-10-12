@@ -1,0 +1,14 @@
+{
+  "heroes": [
+    { "id": 1, "name": "Homem-Aranha" },
+    { "id": 2, "name": "Pantera Negra" },
+    { "id": 3, "name": "Batman" },
+    { "id": 4, "name": "Super Man" },
+    { "id": 5, "name": "Flash" },
+    { "id": 6, "name": "Capitão América" },
+    { "id": 7, "name": "Star Lord" },
+    { "id": 8, "name": "Homem de Ferro" },
+    { "id": 9, "name": "Rocket Raccoon" },
+    { "id": 10, "name": "Drax" }
+  ]
+}
